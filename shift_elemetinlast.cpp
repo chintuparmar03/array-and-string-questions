@@ -9,7 +9,7 @@ int main (){
      cin>>d;
     int temp=0; 
     for(int j=1;j<=d;j++){
-     for(int i=0;i<5;i++){
+     for(int i=0;i<=5;i++){
         temp=arr[i];
         arr[i]=arr[i+1];
         arr[i+1]=temp;
