@@ -2,13 +2,14 @@
 using namespace std;
 int main()
 {
-    string str= "rishi";
-    int size = str.size();
-    cout<<size;
-     int j=4,i=0;
-      char temp;
+    string str= "CHINTU";
+    
+    
+     int j=5,i=0;
+      char temp=0;
+      
    
-         while (i!=j){
+         while (i!=j&&i<j){
          temp=str[j];
          str[j]=str[i];
         str[i]=temp;
