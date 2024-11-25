@@ -10,7 +10,7 @@ int main()
         if(odd1!=0){
             odd=odd1;
         }
-    }
-    cout<<odd;
+ 
+    cout<<odd; 
    return 0;
 }
