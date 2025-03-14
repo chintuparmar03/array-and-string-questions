@@ -3,12 +3,12 @@ using namespace std;
 int main()
 {
     string str= "CHINTU";
-    int size = str.size();
     
-     int j=size-1,i=0;
+    
+     int j=5,i=0; 
       char temp=0;
       
-   
+      
          while (i!=j&&i<j){
          temp=str[j];
          str[j]=str[i];
