@@ -6,7 +6,7 @@ int main()
     int size = sizeof(arr)/sizeof(arr[0]);
     
      int j=size-1,i=0;
-      char temp=0;
+      int temp=0;
       
    
          while (i!=j&&i<j){
