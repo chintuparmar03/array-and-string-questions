@@ -1,22 +1,30 @@
 #include<stdio.h>
 int main(){
    
-    int arr[5]={1,6,3,4,5};
+    int arr[5];
+     for(int i=0;i<5;i++){
+        scanf("%d",&arr[i]);
+     }
     int max=arr[0];
-    int max2=arr[0];
+    int max2=-1;
     for(int i=1;i<5;i++){
+
            if(arr[i]>max){
+              max2=max;
               max=arr[i];
            }   
+         else if(arr[i]>max2&& arr[i]!=max){
+            max2=arr[i];
+         }
     }
-
-    for( int j=1;j<5;j++){
-        if(arr[j]>max2 && arr[j]!=max){
-            max2=arr[j];
-        }
+    printf(" the first largest no :%d\n",max);
+    if(max2==-1){
+        printf("second largest is not there");
     }
-     printf(" the first largest no :%d\n",max);
-      printf("the second largest no :%d",max2);
-
+    else{
+        printf("the second largest no :%d",max2);
+    }
+   
+     
     return 0;
 }

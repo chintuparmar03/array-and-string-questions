@@ -1,22 +1,24 @@
 #include<iostream>
 using namespace std;
-int main()
-{
-  int arr[7];
-  for(int i=0;i<7;i++){
-    cin>>arr[i];
-  }
-   int sum=0;
-  int  max=0;
-  for(int j=0;j<7;j++){
-    sum=sum+arr[j];
-    if(sum>max){
-      max=sum;
+
+int main() {
+    int arr[10] = {1, 2, 4, 5, 63, 8, 7, 5, 4, 7};
+    int n = 10;
+    bool swapped;
+
+    for (int i = 0; i < n - 1; i++) {
+        swapped = false;
+        for (int j = 0; j < n - i - 1; j++) {
+            if (arr[j] < arr[j + 1]) {  // descending order
+                swap(arr[j], arr[j + 1]);
+                swapped = true;
+            }
+        }
+        if (!swapped) break;  // array is already sorted
     }
-    else{
-      sum=0;
+
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
     }
-  }
-  cout<<max;
-   return 0;
+    return 0;
 }
