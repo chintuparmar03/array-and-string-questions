@@ -10,12 +10,22 @@ int main()
     for(int i=0;i<10;i++){
         if(arr[i]>arr[i+1]&&arr[i]>larg){
             larg=arr[i];
-          
         }
-        if(arr[i]<arr[i+1]&&arr[i]<=sml){
+        if(arr[i]>arr[i+1]&&arr[i]>=sml&&arr[i]!=larg){
             sml=arr[i];
         }
     }
-    cout<<"largest no : "<<larg<<endl<<"smallest no : "<<sml;
+    cout<<"largest no : "<<larg<<endl;
+    cout<<"second largest no:"<<sml<<endl;
+    
+    larg=0;
+    
+    for(int i=0;i<10;i++){
+        if(arr[i]<sml&&arr[i]!=sml){
+           larg=max(arr[i],larg);
+        }
+
+    }
+    cout<<"third:"<<larg;
    return 0;
 }
