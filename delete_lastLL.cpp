@@ -43,7 +43,7 @@ int main()
    int arr[]={10,20,30,40};
    int n=sizeof(arr)/sizeof(arr[0]);
    Node*head=convert2LL(arr,n);
-  head= deletelast(head);
+   head= deletelast(head);
    printLL(head);
    return 0;
 }

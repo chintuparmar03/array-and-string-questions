@@ -1,7 +1,5 @@
-
 #include <iostream>
 #include<bits/stdc++.h>
-
 using namespace std;
 int main() {
     int n;
@@ -25,7 +23,5 @@ int main() {
        p=p/10;
    }
    cout<<"sum:"<<sum;
- 
-
     return 0;
 }

@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
-void swap(int &a,int &b){
-    int temp=a;
-    a=b;
-    b=temp;
-}
+// void swap(int &a,int &b){
+//     int temp=a;
+//     a=b;
+//     b=temp;
+// }
 void display(int a[],int size){
     for(int i=0;i<size;i++){
         cout<<a[i]<<" ";
