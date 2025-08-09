@@ -9,7 +9,7 @@ int main()
     vector<string> s;
    cout<<"enter the text :";
       for(int &p:s){
-        getline(cin,*p);
+        getline(cin,p);
       }
    return 0;
 }

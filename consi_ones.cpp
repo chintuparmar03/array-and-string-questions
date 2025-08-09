@@ -2,10 +2,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int arr[6]={0,1,0,1,1,0};
+  int n;
+  cout<<"enter the size:";
+  cin>>n;
+    int arr[n];
+    cout<<"enter the element:";
+    for(int i=0;i<n;i++){
+      cin>>arr[i];
+    }
     int consi=0;
     int maxi=0;
-     for(int i=0;i<6;i++){
+     for(int i=0;i<n;i++){
           if(arr[i]==1){
             consi=consi+1;
             maxi=max(maxi,consi);
@@ -14,6 +21,5 @@ int main(){
             consi=0;
           }
      }
-    
      cout<<maxi;
 }
